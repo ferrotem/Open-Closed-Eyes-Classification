@@ -53,7 +53,7 @@ if __name__ == "__main__":
         if np.mean(output)>0.5:
             label.append(["test/"+list_img_path[i],1])
         else:
-            label.append(["test/"+list_img_path[i],1])
+            label.append(["test/"+list_img_path[i],0])
         
     with open('result.csv', 'w') as f: 
         write = csv.writer(f) 
